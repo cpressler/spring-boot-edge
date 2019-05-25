@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>SV Edge Service</title>
+
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th {
+                text-align: left;
+                padding: 3px;
+                border-bottom: 1px solid black;
+            }
+            td {
+                padding: 3px;
+            }
+            tr:nth-child(even) {
+                background-color: #e6e6e6;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SV Edge Service</h1>
+        <h2>Version: @project.version@</h2>
+        <h2>Build DateTime: @git.build.time@</h2>
+        <h2>Source Commit: @git.commit.id.abbrev@</h2>
+
+    </body>
+</html>

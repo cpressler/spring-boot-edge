@@ -1,0 +1,15 @@
+
+[Unit]
+Description=spring-boot-edge-server
+
+
+[Service]
+User=tomcat
+EnvironmentFile=-/etc/sysconfig/spring-boot-edge-server
+WorkingDirectory=/opt/services/spring-boot-edge-server
+ExecStart=/usr/bin/java $OPTIONS -jar spring-boot-edge-server-boot.jar
+SuccessExitStatus=143
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
