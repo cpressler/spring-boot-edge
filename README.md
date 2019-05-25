@@ -27,8 +27,12 @@ delete a container by name
 
 
 ### resetting git repo
-  rm -rf .git
-  git init
-  git remote add origin https://github.com/cpressler/spring-boot-edge.git
-  git commit -am 'initial commit'
-  git push -f origin master
+in the project folder execute these commands to remove all old history
+```bash
+rm -rf .git
+git init
+git remote add origin https://github.com/cpressler/spring-boot-edge.git
+git commit -am 'initial commit'
+git push -f origin master
+```
+  
