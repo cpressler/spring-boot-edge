@@ -27,7 +27,7 @@
 
         <springboot.app.name>edge-server</springboot.app.name>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-        <version.springfox>2.8.0</version.springfox>
+        <version.springfox>2.10.0</version.springfox>
     </properties>
 
 
